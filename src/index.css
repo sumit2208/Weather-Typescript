@@ -1,0 +1,36 @@
+/* Tailwind custom styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+[data-theme="light"] {
+  --bg-color: #F3F4F6;
+  --text-color: black;
+  --bg-colors: #FCFCFC; /* Removed quotes for color variable */
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: white;
+  --bg-colors: #161616; /* Removed quotes for color variable */
+  --box-shadow: 0 4px 6px rgba(30, 27, 27, 0), 0 1px 3px rgba(255, 255, 255, 0.06);
+}
+
+.text-white {
+  color: var(--text-color);
+}
+ 
+
+.inside_color{ 
+  box-shadow:var(--box-shadow) ;
+} 
+ 
